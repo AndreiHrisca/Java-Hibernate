@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 17 feb. 2021 10:34:25 by Hibernate Tools 5.4.27.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="hibernatenevera" dynamic-insert="false" dynamic-update="false" mutable="true" name="modelo.Refresco" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="refresco">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="nombre" optimistic-lock="true" type="string" unique="false">
+            <column name="nombre" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="tamano" optimistic-lock="true" type="int" unique="false">
+            <column name="tamano" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="sabor" optimistic-lock="true" type="string" unique="false">
+            <column length="250" name="sabor" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="marca" optimistic-lock="true" type="string" unique="false">
+            <column length="250" name="marca" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="propiedades" optimistic-lock="true" type="string" unique="false">
+            <column length="250" name="propiedades" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
